@@ -66,8 +66,7 @@ header h1 {
 	margin: 0;
 	width: 100%;
 	padding: 38px 0 20px 0;
-	border-bottom: 3px solid #77a466;
-	
+	border-bottom: 3px solid #77a466;	
 }
 
 header h1 span {
@@ -178,4 +177,64 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: .875rem;
+}
+
+
+/******* Tablet Media Query *******/
+
+@media all and (min-width: 768px) {
+	
+	/****** Bottom Section ******/
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+
+	.section-one {
+		width: 26%;
+	}
+	
+	.section-two {
+		width: 40%;
+		border-top: none;
+		border-bottom: none;
+		border-left: 5px solid #eee;
+		border-right: 5px solid #eee;
+		padding: 0 30px;
+	}
+	
+	.section-three {
+		width: 26%;
+	}
+}
+
+/******* Desktop Media Query *******/
+
+@media all and (min-width: 1200px) {
+
+	body {
+		font-size: 1em;
+	}
+
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+
+	}
+
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;	
+	}
+
+	header nav {
+		width: 21%;
+	}
+	
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
 }
